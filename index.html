@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduzp - Portfólio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i>
+                eduzp
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="theme-switch">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">
+                    <i class="fas fa-rocket"></i> Desenvolvedor de Software
+                </span>
+                <h1 class="hero-title">Luiz Eduardo</h1>
+                <p class="hero-subtitle">Atuo há alguns anos no mercado de Tecnologia da Informação, desenvolvendo aplicações e softwares, com foco especial em jogos digitais. Sou apaixonado por aprender novas estruturas e metodologias.</p>
+                <div class="hero-cta">
+                    <a href="#projetos" class="btn primary">
+                        <i class="fas fa-eye"></i>
+                        Ver Projetos
+                    </a>
+                    <a href="#contato" class="btn secondary">
+                        <i class="fas fa-paper-plane"></i>
+                        Fale Comigo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre Mim</h2>
+                <p>Conheça um pouco mais sobre minha jornada e experiência no mundo do desenvolvimento</p>
+            </div>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>Olá visitantes! Meu nome é Luiz Eduardo, também conhecido como "eduzp". Sou um desenvolvedor apaixonado por criar soluções digitais inovadoras, com foco especial em jogos digitais.</p>
+                    <p>Meu principal objetivo é ser uma ponte entre a tecnologia e o usuário final, criando automações e soluções que facilitem e otimizem a experiência de quem utiliza o software. Atualmente, curso Engenharia de Software na UCB, com previsão de conclusão para o final de 2027.</p>
+                    <div class="sobre-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Anos de Experiência</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Projetos Desenvolvidos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Jogos Criados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Meus Projetos</h2>
+                <p>Conheça alguns dos projetos que desenvolvi ao longo da minha carreira</p>
+            </div>
+            <div class="projetos-container">
+                <div class="projetos-grid">
+                    <!-- Os projetos principais serão carregados dinamicamente aqui -->
+                    <div class="loading-projects">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <p>Carregando projetos...</p>
+                    </div>
+                </div>
+                <div class="ver-mais-container">
+                    <button class="btn-ver-mais" id="btnVerMais">
+                        <i class="fas fa-chevron-down"></i>
+                        Ver mais projetos
+                    </button>
+                </div>
+                <div class="projetos-expandidos" id="projetosExpandidos">
+                    <div class="projetos-grid-expandida">
+                        <!-- Os projetos adicionais serão carregados aqui -->
+                    </div>
+                    <button class="btn-fechar" id="btnFechar">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="habilidades">
+        <div class="container">
+            <div class="section-header">
+                <h2>Minhas Habilidades</h2>
+                <p>Conheça as tecnologias e ferramentas que utilizo no desenvolvimento</p>
+            </div>
+            <div class="habilidades-grid">
+                <div class="habilidade-categoria">
+                    <div class="habilidade-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Desenvolvimento Web</h3>
+                    </div>
+                    <div class="habilidade-items">
+                        <div class="habilidade-item">
+                            <div class="habilidade-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span>HTML5</span>
+                            <div class="habilidade-level">
+                                <div class="level-bar" data-level="95%"></div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <div class="habilidade-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span>CSS3</span>
+                            <div class="habilidade-level">
+                                <div class="level-bar" data-level="90%"></div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <div class="habilidade-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <span>JavaScript</span>
+                            <div class="habilidade-level">
+                                <div class="level-bar" data-level="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="habilidade-categoria">
+                    <div class="habilidade-header">
+                        <i class="fas fa-gamepad"></i>
+                        <h3>Desenvolvimento de Jogos</h3>
+                    </div>
+                    <div class="habilidade-items">
+                        <div class="habilidade-item">
+                            <div class="habilidade-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <span>Unity</span>
+                            <div class="habilidade-level">
+                                <div class="level-bar" data-level="85%"></div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <div class="habilidade-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span>C#</span>
+                            <div class="habilidade-level">
+                                <div class="level-bar" data-level="80%"></div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <div class="habilidade-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                            <span>Game Design</span>
+                            <div class="habilidade-level">
+                                <div class="level-bar" data-level="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="habilidade-categoria">
+                    <div class="habilidade-header">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Desenvolvimento Mobile</h3>
+                    </div>
+                    <div class="habilidade-items">
+                        <div class="habilidade-item">
+                            <div class="habilidade-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span>React Native</span>
+                            <div class="habilidade-level">
+                                <div class="level-bar" data-level="80%"></div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <div class="habilidade-icon">
+                                <i class="fab fa-android"></i>
+                            </div>
+                            <span>Android</span>
+                            <div class="habilidade-level">
+                                <div class="level-bar" data-level="75%"></div>
+                            </div>
+                        </div>
+                        <div class="habilidade-item">
+                            <div class="habilidade-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <span>iOS</span>
+                            <div class="habilidade-level">
+                                <div class="level-bar" data-level="70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Vamos trabalhar juntos no seu próximo projeto</p>
+            </div>
+            <div class="contato-container">
+                <form class="contato-form" action="https://formsubmit.co/eduarluiz21@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" class="form-control" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Mensagem
+                    </button>
+                </form>
+
+                <div class="contato-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p>luizunc@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Localização</h3>
+                            <p>Brasília, DF - Brasil</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Educação</h3>
+                            <p>Engenharia de Software - UCB</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/luizunc" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/luizunc" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/luizunc" class="social-link" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Luiz Eduardo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
